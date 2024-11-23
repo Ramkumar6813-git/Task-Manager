@@ -1,0 +1,45 @@
+#root{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+.form-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+.form{
+  background: #fff;
+  padding: 40px;
+  border-radius: 6px;
+}
+.form-heading{
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+/* Old way using -ms-high-contrast */
+@media screen and (-ms-high-contrast: active) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (forced-colors: active) { 
+  .form-overlay { 
+    background: WindowText; 
+    color: Window; 
+  } 
+.form { background: Window; } 
+
+}
